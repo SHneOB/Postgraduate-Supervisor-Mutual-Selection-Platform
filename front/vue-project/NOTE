@@ -1,0 +1,38 @@
+<script lang="ts" setup>//使用setup语法糖就已自动将该文件export default,其他文件可以直接引入 且可随意命名
+import Request from '../api/request';//实例名叫Request
+import {ref} from 'vue';//ref 响应式实例 使得 变量变化时 渲染在页面上的变量也变化
+ const OBJS=ref();//指向一个对象 可以修改OBJS指向的对象 不能修改OBJS本身
+
+        function handler(){
+        console.log("post_data触发")
+            Request({
+                method: 'POST',
+                url: '/posts',
+                data: {
+                    id: "3",
+                    title: "json测试",
+                    body: "json测试",
+                    author: "杨国庆"
+                }
+            }).then(response => {
+            console.log(response.data)
+            get_data();
+            return response.data
+            }, error => {
+            console.log('错误', error.message)
+            })  
+        }
+
+        function get_data(){
+            Request.get("/posts")
+            .then(response => {
+                console.log(response.data);//在模板中访问从 setup 返回的 ref 时，它会自动浅层解包，因此你无须再在模板中为它写 .value。当通过 this 访问时也会同样如此解包。
+                OBJS.value = response.data;//在 <script setup> 中，响应式数据是通过引用类型的变量来管理的，而直接修改这个变量会被认为是修改常量，因此会提示不能修改常量。
+                //正确的做法是通过 OBJS.value = 某个对象 来修改响应式数据的值。
+            })
+            .catch(error => {
+                console.error(error);
+            });  
+        }
+get_data();
+</script>

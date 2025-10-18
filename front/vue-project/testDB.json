@@ -1,0 +1,94 @@
+{
+  "student": [
+    {
+      "account": "202311",
+      "className": "计22-0",
+      "dept": "信息学院",
+      "email": "12349458@qq.com",
+      "major": "计算机科学与技术",
+      "name": "张小五",
+      "phone": "15634269085",
+      "sex": "男",
+      "year": "2023",
+      "token": "eyJhbGciOiJIUzI1NiJ9.eyJhZG1pbklkIjoxLCJleHAiOjE3MTU3OTAwNDV9.U_08e2feA9RYqrmIG9Tdo5W61Lj8ZOo6syrke5kANWM",
+      "id": "5cf7"
+    },
+    {
+      "id": "c302",
+      "account": "202311",
+      "name": "张小五",
+      "sex": "男",
+      "phone": "15634269085",
+      "email": "12349458@qq.com",
+      "dept": "信息学院",
+      "major": "计算机科学与技术",
+      "year": "2023"
+    },
+    {
+      "id": "c302",
+      "account": "202311",
+      "name": "张小五",
+      "sex": "男",
+      "phone": "15634269085",
+      "email": "12349458@qq.com",
+      "dept": "信息学院",
+      "major": "计算机科学与技术",
+      "year": "2023"
+    },
+    {
+      "id": "c302",
+      "account": "202311",
+      "name": "张小五",
+      "sex": "男",
+      "phone": "15634269085",
+      "email": "12349458@qq.com",
+      "dept": "信息学院",
+      "major": "计算机科学与技术",
+      "year": "2023"
+    },
+    {
+      "id": "c302",
+      "account": "202311",
+      "name": "张小五",
+      "sex": "男",
+      "phone": "15634269085",
+      "email": "12349458@qq.com",
+      "dept": "信息学院",
+      "major": "计算机科学与技术",
+      "year": "2023"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "account": "0001",
+      "password": "xxxxxxx",
+      "name": "张丽",
+      "sex": "女",
+      "title": "老师",
+      "token": "eyJhbGciOiJIUzI1NiJ9.eyJhZG1pbklkIjoxLCJleHAiOjE3MTU3OTAwNDV9.U_08e2feA9RYqrmIG9Tdo5W61Lj8ZOo6syrke5kANWM"
+    },
+    {
+      "id": "1",
+      "account": "0001",
+      "name": "张丽",
+      "sex": "女",
+      "title": "老师"
+    },
+    {
+      "id": "1",
+      "account": "0001",
+      "name": "张丽",
+      "sex": "女",
+      "title": "老师"
+    }
+  ],
+  "login": [
+    {
+      "id": "1",
+      "account": "admin",
+      "name": "管理员",
+      "token": "eyJhbGciOiJIUzI1NiJ9.eyJhZG1pbklkIjoxLCJleHAiOjE3MTU3OTAwNDV9.U_08e2feA9RYqrmIG9Tdo5W61Lj8ZOo6syrke5kANWM"
+    }
+  ]
+}
